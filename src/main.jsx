@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './style_main_NAO_EDITAR.css'
 
-import AppHome from './AppHome'
-import './index.css'
+import AppRotas from "./AppRotas.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AppHome />
+    <AppRotas />
   </React.StrictMode>
 )
