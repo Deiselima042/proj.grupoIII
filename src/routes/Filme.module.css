@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.movie {
+    margin: auto;
+    width: 800px;
+    padding: 50px;
+    background-color: rgb(132, 166, 217);
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 10px;
+}
+
+.img {
+    width: auto;
+    height: 300px;
+    border: 5px double black;
+}
+
+.name {
+    margin: 10px 0;
+}
+
+hr {
+    margin: 10px 0;
+    height: 2px;
+    border-width: 0;
+    color: black;
+    background-color: red;
+}
+
+.edit {
+    margin: 30px 585px 0 0;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.back {
+    margin: 10px 10px 0 0;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
