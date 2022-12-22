@@ -46,14 +46,14 @@ const Catalogo = () => {
 
             <div className={styles.item} key={post.id}>
               <Link to={`/todos_os_filmes/${post.id}`}>
-                <img src={`../../public/${post.capa}`} alt={post.nome} className={styles.imgItem} />
+                <img src={post.imagem} alt={post.nome} className={styles.imgItem} />
                 <h2 className={styles.titleH2}>{post.nome}</h2>
               </Link>
-              <p className={styles.genre}>{post.genero}</p>
-              <p className={styles.synopsis}>{post.sinopse}</p>
-
+          
               <div>
-                <button onClick={() => postDelete(post.id)} className={styles.delete}>Deletar</button>
+              <button onClick={() => postDelete(post.id)} className={styles.delete}>Deletar</button>
+              <br></br>
+              <br></br>
               </div>
 
             </div>

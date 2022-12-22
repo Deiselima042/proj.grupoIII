@@ -26,12 +26,14 @@ const Filme = () => {
 
 
   return (
-    <div>
+    <div className="bloco_filme_detalhe">
+      <br></br>
+      
       {!post.nome ? (
         <p>Carregando...</p>
       ) : (
         <div className={styles.movie}>
-          <img src={`../../public/${post.capa}`} alt={post.nome} className={styles.img}/>
+          <img src={post.imagem} alt={post.nome} className={styles.img}/>
           <h2 className={styles.name}>{post.nome}</h2>
           <h3 className={styles.genre}>Gênero: {post.genero}</h3>
           <hr />
@@ -51,6 +53,7 @@ const Filme = () => {
           
         </div>
       )}
+      <br></br>
     </div>
   );
 };

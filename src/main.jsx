@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import App from './App'
+import './main.css'
 
 import Catalogo from "./routes/Catalogo";
 import Filme from "./routes/Filme";
 import NovoFilme from "./routes/NovoFilme";
 import EditarFilme from "./routes/EditarFilme";
 import Resultadobusca from "./routes/Resultadobusca"
-
 import Home from "./AppHome"
 import Cinemas from "./AppCinemas"
 

@@ -15,11 +15,10 @@
         width:100%;
         max-width: 800px;
         padding: 50px;
-        background-color: rgb(132, 166, 217);
-        box-shadow: 0 0 5px 0 black;
+        background-color: #84A6D9;
+        box-shadow: 0 0 5px 0 #000000;
         border-radius: 10px;
         margin-top:20px;
-    
     }
     
     .newPost div {
@@ -32,19 +31,19 @@
     
     .newPost div input {
         box-sizing: border-box;
-        border: 2px solid #ccc;
+        border: 2px solid #000000;
         border-radius: 4px;
         font-size: 16px;
-        background-color: white;
+        background-color: #FFFFFF;
         padding: 12px 20px 12px 10px;
     }
 
     .newPost div textarea {
         box-sizing: border-box;
-        border: 2px solid #ccc;
+        border: 2px solid #000000;
         border-radius: 4px;
         font-size: 16px;
-        background-color: white;
+        background-color: #FFFFFF;
         padding: 12px 20px 12px 10px;
     }
     
@@ -76,11 +75,10 @@
     }
     
     .buttonNewPost {
-    
         margin: 10px 10px 0 0;
         padding: 10px;
-        color: white;
-        background-color: black;
+        color: #FFFFFF;
+        background-color: #FFCC15;
         border: 0;
         cursor: pointer;
         border-radius: 4px;
@@ -89,8 +87,8 @@
     .buttonCleanPost {
         margin: 10px 10px 0 0;
         padding: 10px;
-        color: white;
-        background-color: black;
+        color: #FFFFFF;
+        background-color: #FFCC15;
         border: 0;
         cursor: pointer;
         border-radius: 4px;
@@ -113,11 +111,9 @@
             margin-top: 50px;
             width:100%;
             padding: 30px;
-            background-color: rgb(132, 166, 217);
-            box-shadow: 0 0 5px 0 black;
+            background-color: #84A6D9;
+            box-shadow: 0 0 5px 0 #000000;
             border-radius: 10px;
-            border: 20px double rgb(217, 151, 113);
-            
         }
         
         .newPost div {
@@ -130,13 +126,22 @@
     
         .newPost div input {
             box-sizing: border-box;
-            border: 2px solid #ccc;
+            border: 2px solid #000000;
             border-radius: 4px;
             font-size: 16px;
-            background-color: white;
+            background-color: #FFFFFF;
             padding: 12px 20px 12px 10px;
         }
         
+        .newPost div textarea {
+            box-sizing: border-box;
+            border: 2px solid #000000;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #FFFFFF;
+            padding: 12px 95px 12px 10px;
+        }
+
         .newPost .cols input, .cols select {
             padding: 8px 10px;
             width: 100%;
@@ -147,8 +152,8 @@
             display:block;
             margin: 10px 10px 0 0;
             padding: 10px;
-            color: white;
-            background-color: black;
+            color: #FFFFFF;
+            background-color: #FFCC15;
             border: 0;
             cursor: pointer;
             border-radius: 4px;
@@ -157,8 +162,8 @@
         .buttonCleanPost {
             margin: 10px 10px 0 0;
             padding: 10px;
-            color: white;
-            background-color: black;
+            color: #FFFFFF;
+            background-color: #FFCC15;
             border: 0;
             cursor: pointer;
             border-radius: 4px;

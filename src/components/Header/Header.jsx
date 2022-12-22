@@ -15,10 +15,10 @@ function Header() {
 
       <nav className="header_botoes_de_navegacao">
 
-        <button onClick={() => { abrirlink('/'); }} className="header_button">HOME</button>
-        <button onClick={() => { abrirlink('/filmes'); }} className="header_button">FILME</button>
+        <button onClick={() => { abrirlink('/home'); }} className="header_button">HOME</button>
         <button onClick={() => { abrirlink('/cinemas'); }} className="header_button">CINEMA</button>
-
+        <button onClick={() => { abrirlink('/todos_os_filmes'); }} className="header_button">FILME</button>
+        <button onClick={() => { abrirlink('/adicionar_filme'); }} className="header_button">ADC FILME</button>
       </nav>
     </header>
 

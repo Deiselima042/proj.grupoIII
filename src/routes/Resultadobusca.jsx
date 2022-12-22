@@ -35,7 +35,7 @@ const Catalogo = () => {
         posts.map((post) => (
           <div className={styles.item} key={post.id}>
             <Link to={`/todos_os_filmes/${post.id}`}>
-              <img src={`../../public/${post.capa}`} alt={post.nome} className={styles.imgItem}/>
+              <img src={post.imagem} alt={post.nome} className={styles.imgItem}/>
               <h2 className={styles.titleH2}>{post.nome}</h2>
             </Link>
               <p className={styles.genre}>{post.genero}</p>

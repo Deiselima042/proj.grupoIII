@@ -13,12 +13,12 @@ const NovoFilme = () => {
   const [ano_de_lancamento, setAno] = useState();
   const [duracao_do_filme, setDuracao] = useState();
   const [sinopse, setSinopse] = useState();
-  const [capa, setCapa] = useState();
+  const [imagem, setImagem] = useState();
 
   const newPost = async (e) => {
     e.preventDefault();
     const post = { nome, genero, direcao, pais, distribuicao_producao, 
-    ano_de_lancamento, duracao_do_filme, sinopse,capa};
+    ano_de_lancamento, duracao_do_filme, sinopse,imagem};
     await seek.post("/filmes", post);
     navigate("/todos_os_filmes");
   };
@@ -54,8 +54,8 @@ const NovoFilme = () => {
         </div>
 
         <div>
-          <label htmlFor="capa">Capa:</label>
-          <input type="text" name="capa" id="capa" placeholder="Digite link capa" onChange={(e) => setCapa(e.target.value)}/>
+          <label htmlFor="imagem">Capa:</label>
+          <input type="text" name="imagem" id="imagem" placeholder="Insira link da capa" onChange={(e) => setImagem(e.target.value)}/>
         </div>
         </section>
 

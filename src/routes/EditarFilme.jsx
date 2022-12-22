@@ -14,7 +14,7 @@ const EditarFilme = () => {
   const [ano_de_lancamento, setAno] = useState();
   const [duracao_do_filme, setDuracao] = useState();
   const [sinopse, setSinopse] = useState();
-  const [capa, setCapa] = useState();
+  const [imagem, setImagem] = useState();
 
   const { id } = useParams();
 
@@ -32,7 +32,7 @@ const EditarFilme = () => {
       setDuracao(data.duracao_do_filme);
       setSinopse(data.sinopse);
       setAno(data.ano_de_lancamento);
-      setCapa(data.capa);
+      setImagem(data.imagem);
     } catch (error) {
       console.log(error);
     }
@@ -42,7 +42,7 @@ const EditarFilme = () => {
     e.preventDefault();
 
     const post = { nome, genero, direcao, pais, distribuicao_producao, ano_de_lancamento,
-    duracao_do_filme, sinopse, capa };
+    duracao_do_filme, sinopse, imagem };
 
 
     await seek.put(`/filmes/${id}`, post);
@@ -56,6 +56,7 @@ const EditarFilme = () => {
   }, []);
 
   return (
+    
     <div>
       
       <form onSubmit={(e) => editarFilme(e)} className={style.editPost}>
@@ -109,14 +110,14 @@ const EditarFilme = () => {
         </div>
 
         <div>
-          <label htmlFor="capa">Capa:</label>
+          <label htmlFor="imagem">Capa:</label>
           <input
             type="text"
-            name="capa"
-            id="capa"
+            name="imagem"
+            id="imagem"
             placeholder="Digite Link Capa"
-            onChange={(e) => setCapa(e.target.value)}
-            value={capa || ""}
+            onChange={(e) => setImagem(e.target.value)}
+            value={imagem || ""}
           />
         </div>
         </section>
@@ -169,7 +170,6 @@ const EditarFilme = () => {
           />
         </div>
 
-
         </section>
         </div>
         
@@ -179,6 +179,7 @@ const EditarFilme = () => {
       </Link>
       </form>
     </div>
+    
   );
 };
 

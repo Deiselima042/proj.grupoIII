@@ -7,6 +7,13 @@ function App() {
     <>
       
       <Header />
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      
+
       <Outlet />
       <Footer />
       

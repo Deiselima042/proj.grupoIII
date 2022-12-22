@@ -18,17 +18,15 @@ function AppCinemas() {
 
   }, [])
 
-
-
   return (
 
-    <div className="box">
+    <div>
 
-
+      <div className="box">
 
         <div className="card-header">
 
-          {info.length === 0 ? (<img src="https://thumbs.gfycat.com/MeekBoringGnat-size_restricted.gif" />) : (
+          {info.length === 0 ? (<img className="animacao" src="https://thumbs.gfycat.com/MeekBoringGnat-size_restricted.gif" />) : (
             info.map((cinema) => (
               <div>
                 <div className="cinema" key={cinema.id}>
@@ -38,7 +36,12 @@ function AppCinemas() {
                     <li><span><h3>Localização:</h3></span> {cinema.localizacao}</li>
                     <li><span><h3>Horario:</h3></span> {cinema.horario_dos_filmes}</li>
                     <li><span><h3>Assentos:</h3></span>{cinema.assentos}</li>
+
+                    <br></br>
+
                     <li><span><button>Comprar Ingresso:</button></span></li>
+
+                    <br></br>
 
                   </ul>
                   <br />
@@ -50,22 +53,15 @@ function AppCinemas() {
           )}
         </div>
 
-  
+      </div>
+
+      <br></br>
+      <br></br>
 
     </div>
-
-
 
   )
 
 }
 
-export default AppCinemas
-
-
-
-
-
-
-
-
+export default AppCinemas;
