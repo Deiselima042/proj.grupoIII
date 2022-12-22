@@ -4,11 +4,11 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import App from './App'
 import './main.css'
 
-import Catalogo from "./routes/Catalogo";
-import Filme from "./routes/Filme";
-import NovoFilme from "./routes/NovoFilme";
-import EditarFilme from "./routes/EditarFilme";
-import Resultadobusca from "./routes/Resultadobusca"
+import Catalogo from "./pages/Catalogo";
+import Filme from "./pages/Filme";
+import NovoFilme from "./pages/NovoFilme";
+import EditarFilme from "./pages/EditarFilme";
+import Resultadobusca from "./pages/Resultadobusca"
 import Home from "./AppHome"
 import Cinemas from "./AppCinemas"
 
@@ -41,6 +41,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "/",
         element: <Home />,
       },
       {
